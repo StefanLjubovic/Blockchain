@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 
 	"github.com/hyperledger/fabric-contract-api-go/contractapi"
 )
@@ -402,4 +403,15 @@ func (s *SimpleChaincode) ChangeCarColor(ctx contractapi.TransactionContextInter
 	}
 
 	return oldColor, nil
+}
+
+func main() {
+	assetChaincode, err := contractapi.NewChaincode(&SimpleChaincode{})
+	if err != nil {
+		log.Panicf("Error creating cars-and-persons chaincode: %v", err)
+	}
+
+	if err := assetChaincode.Start(); err != nil {
+		log.Panicf("Error starting cars-and-persons chaincode: %v", err)
+	}
 }
