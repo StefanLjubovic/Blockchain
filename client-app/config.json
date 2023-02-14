@@ -1,0 +1,41 @@
+{
+    "orgs": {
+      "org1": {
+        "mspID": "Org1MSP",
+        "certPath": "../test-network/organizations/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/signcerts/cert.pem",
+        "keyPath": "../test-network/organizations/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/",
+        "tlsCertPath": "../test-network/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt",
+        "peerEndpoint": "localhost:7051",
+        "gatewayPeer": "peer0.org1.example.com"
+      },
+  
+      "org2": {
+        "mspID": "Org2MSP",
+        "certPath": "../test-network/organizations/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/signcerts/cert.pem",
+        "keyPath": "../test-network/organizations/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/keystore/",
+        "tlsCertPath": "../test-network/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt",
+        "peerEndpoint": "localhost:9051",
+        "gatewayPeer": "peer0.org2.example.com"
+      },
+  
+      "org3": {
+        "mspID": "Org3MSP",
+        "certPath": "../test-network/organizations/peerOrganizations/org3.example.com/users/User1@org3.example.com/msp/signcerts/cert.pem",
+        "keyPath": "../test-network/organizations/peerOrganizations/org3.example.com/users/User1@org3.example.com/msp/keystore/",
+        "tlsCertPath": "../test-network/organizations/peerOrganizations/org3.example.com/peers/peer2.org3.example.com/tls/ca.crt",
+        "peerEndpoint": "localhost:11251",
+        "gatewayPeer": "peer2.org3.example.com"
+      },
+      "org4": {
+        "mspID": "Org4MSP",
+        "certPath": "../test-network/organizations/peerOrganizations/org4.example.com/users/User1@org4.example.com/msp/signcerts/cert.pem",
+        "keyPath": "../test-network/organizations/peerOrganizations/org4.example.com/users/User1@org4.example.com/msp/keystore/",
+        "tlsCertPath": "../test-network/organizations/peerOrganizations/org4.example.com/peers/peer2.org4.example.com/tls/ca.crt",
+        "peerEndpoint": "localhost:13251",
+        "gatewayPeer": "peer2.org4.example.com"
+      }
+    },
+    
+    "channelName": "mychannel",
+    "chaincodeName": "basic"
+  }
